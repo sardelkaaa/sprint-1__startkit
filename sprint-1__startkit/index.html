@@ -4,19 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Научиться учиться</title>
+  <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
   <div class="page">
     <header class="header">
-
-      <div class="logo logo_place_header">
-        <img src="images/logo_place_header.svg" alt="Логотип Яндекс Практикума">
-      </div>
-
+      <img class="logo logo_place_header" src="images/logo_place_header.svg" alt="Логотип Яндекс Практикума">
       <h1 class="header__title">Научиться учиться</h1>
       <p class="header__subtitle">
-        Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни? <a class="header-link" href="#">Узнать &#8594;</a>
+        Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни? <a class="header-link" href="#0">Узнать &#8594;</a>
       </p>
       <img class="header__main-illustration" src="images/two_again.png" alt="Мальчик с картины 'Снова двойка'">
       <div class="header__square-pic"></div>
@@ -43,7 +40,7 @@
       <section class="digits">
         <h2 class="section-title">Цифры и факты</h2>
         <p class="section-subtitle">Про учёбу и мозг</p>
-        <table class="table">
+        <div class="table">
           <div class="table__cell">
             <h3 class="table__heading">86 миллиардов</h3>
             <p class="table__text">Число нейронов в мозге человека</p>
@@ -75,21 +72,97 @@
             <p class="table__text">Открытие кривой забывания</p>
           </div>
           <div class="table__cell">
-            <h3 class="table__heading">1889 год</h3>
+            <h4 class="table__heading">1889 год</h4>
             <p class="table__text">Открытие условного рефлекса</p>
           </div>
-        </table>
+        </div>
       </section>
 
       <section class="feynman">
+        <h2 class="feynman__title">Метод Фейнмана</h2>
+        <p class="feynman__subtitle">Выучить и не забыть.</p>
+        <a class="feynman__link" href="#0">Подробнее &#8594;</a>
+        <img class="feynman__image" src="images/feynman.png" alt="Изображение Фейнмана">
       </section>
 
-      <section class="kaufman">
+      <section class="kaufman kaufman_theme_dark">
+        <h2 class="section-title section-title_theme_dark">Принципы обучения</h2>
+        <p class="section-subtitle section-subtitle_theme_dark">От Джоша Кауфмана</p>
+        <div class="table table_theme_dark kaufman__table">
+          <div class="table__cell table__cell_theme_dark">
+            <h3 class="table__heading table__heading_theme_dark">1</h3>
+            <p class="table__text table__text_theme_dark">Выберите привлекательный проект.</p>
+          </div>
+          <div class="table__cell table__cell_theme_dark">
+            <h3 class="table__heading table__heading_theme_dark">2</h3>
+            <p class="table__text table__text_theme_dark">Сосредоточьтесь на каком-то одном навыке.</p>
+          </div>
+          <div class="table__cell table__cell_theme_dark">
+            <h3 class="table__heading table__heading_theme_dark">3</h3>
+            <p class="table__text table__text_theme_dark">Определите целевой уровень мастерства.</p>
+          </div>
+          <div class="table__cell table__cell_theme_dark">
+            <h3 class="table__heading table__heading_theme_dark">4</h3>
+            <p class="table__text table__text_theme_dark">Разбейте навык на элементы.</p>
+          </div>
+          <div class="table__cell table__cell_theme_dark">
+            <h3 class="table__heading table__heading_theme_dark">5</h3>
+            <p class="table__text table__text_theme_dark">Приготовьте всё необходимое для занятий.</p>
+          </div>
+          <div class="table__cell table__cell_theme_dark">
+            <h3 class="table__heading table__heading_theme_dark">6</h3>
+            <p class="table__text table__text_theme_dark">Устраните препятствия для занятий.</p>
+          </div>
+          <div class="table__cell table__cell_theme_dark">
+            <h3 class="table__heading table__heading_theme_dark">7</h3>
+            <p class="table__text table__text_theme_dark">Выделите специальное время для занятий.</p>
+          </div>
+          <div class="table__cell table__cell_theme_dark">
+            <h3 class="table__heading table__heading_theme_dark">8</h3>
+            <p class="table__text table__text_theme_dark">Создайте быстрые петли обратной связи.</p>
+          </div>
+          <div class="table__cell table__cell_theme_dark">
+            <h3 class="table__heading table__heading_theme_dark">9</h3>
+            <p class="table__text table__text_theme_dark">Занимайтесь по расписанию, короткими интенсивными интервалами.</p>
+          </div>
+          <div class="table__cell table__cell_theme_dark">
+            <h3 class="table__heading table__heading_theme_dark">10</h3>
+            <p class="table__text table__text_theme_dark">Уделяйте внимание количеству и скорости.</p>
+          </div>
+        </div>
+        <div class="kaufman__triangle"></div>
       </section>
     </main>
 
     <footer class="footer">
-
+      <div class="footer__columns">
+        <div class="footer__column footer__column_content_copyright">
+          <img class="logo logo_place_footer" src="images/logo_place_footer.svg" alt="Логотип Яндекс Практикума">
+          <p class="footer__author">&copy; Виктор Абанькин</p>
+        </div>
+        <nav class="footer__column footer__column_content_info">
+          <h3 class="footer__column-heading">О Практикуме</h3>
+          <ul class="footer__column-links">
+            <li><a class="footer__column-link" href="#0">Главная</a></li>
+            <li><a class="footer__column-link" href="#0">Концепция</a></li>
+            <li><a class="footer__column-link" href="#0">Наставники</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__column footer__column_content_social">
+          <h3 class="footer__column-heading">Соцсети</h3>
+          <ul class="footer__column-links">
+            <li>
+              <a class="footer__column-link" href="#0"><img class="footer__social-icon" src="images/youtube_color_white.svg" alt="Логотип YouTube">YouTube</a>
+            </li>
+            <li>
+              <a class="footer__column-link" href="#0"><img class="footer__social-icon" src="images/vk_color_white.svg" alt="Логотип ВКонтакте">ВКонтакте</a>
+            </li>
+            <li>
+              <a class="footer__column-link" href="#0"><img class="footer__social-icon" src="images/tiktok_color_white.svg" alt="Логотип TikTok">TikTok</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </footer>
   </div>
 </body>
