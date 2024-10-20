@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Научиться учиться</title>
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="pages/index.css">
+  <link rel="stylesheet" href="vendor/normalize.css">
 </head>
 <body>
   <div class="page">
@@ -13,7 +13,7 @@
       <img class="logo logo_place_header" src="images/logo_place_header.svg" alt="Логотип Яндекс Практикума">
       <h1 class="header__title">Научиться учиться</h1>
       <p class="header__subtitle">
-        Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни? <a class="header-link" href="#0">Узнать &#8594;</a>
+        Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни? <a class="header__link" href="#0">Узнать &#8594;</a>
       </p>
       <img class="header__main-illustration" src="images/two_again.png" alt="Мальчик с картины 'Снова двойка'">
       <div class="header__square-pic"></div>
@@ -37,6 +37,39 @@
         </div>
       </section>
 
+      <section class="techniques">
+        <h2 class="section-title">Техники обучения</h2>
+        <p class="section-subtitle">Пять практик от Барбары Оакли</p>
+        <ul class="cards">
+          <li class="cards__item">
+            <img class="cards__image" src="images/cards-attention.png" alt="Книга '101 эссе, которые изменят твоё мышление'">
+            <h3 class="cards__title">Два вида внимания</h3>
+            <p class="cards__description">Глубокие знания возникают, если чередовать сфокусированное и рассеянное мышление.</p>
+          </li>
+          <li class="cards__item">
+            <img class="cards__image" src="images/cards-recall.png" alt="Задумчивая статуя">
+            <h3 class="cards__title">Recall</h3>
+            <p class="cards__description">Вспоминайте изученное — это позволит соединить разрозненные порции памяти.</p>
+          </li>
+          <li class="cards__item">
+            <img class="cards__image" src="images/cards-interliving.png" alt="Современное здание с людьми">
+            <h3 class="cards__title">Интерливинг</h3>
+            <p class="cards__description">Изучайте несколько навыков одновременно, они обогащают друг друга.</p>
+          </li>
+          <li class="cards__item">
+            <img class="cards__image" src="images/cards-question.png" alt="Человек в комнате с множеством окон">
+            <h3 class="cards__title">Вопросы</h3>
+            <p class="cards__description">Слушая преподавателя, придумывайте хороший вопрос, который вас действительно волнует.</p>
+          </li>
+          <li class="cards__item">
+            <img class="cards__image" src="images/cards-competence.png" alt="Книги на руке человека">
+            <h3 class="cards__title">Иллюзия компетентности</h3>
+            <p class="cards__description">Повторите про себя, запишите, расскажите другу: вам только кажется, что вы владеете новой темой.
+            </p>
+          </li>
+        </ul>
+      </section>
+      
       <section class="digits">
         <h2 class="section-title">Цифры и факты</h2>
         <p class="section-subtitle">Про учёбу и мозг</p>
@@ -137,7 +170,7 @@
     <footer class="footer">
       <div class="footer__columns">
         <div class="footer__column footer__column_content_copyright">
-          <img class="logo logo_place_footer" src="images/logo_place_footer.svg" alt="Логотип Яндекс Практикума">
+          <div class="logo logo_place_footer"></div>
           <p class="footer__author">&copy; Виктор Абанькин</p>
         </div>
         <nav class="footer__column footer__column_content_info">
