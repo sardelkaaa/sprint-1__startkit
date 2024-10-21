@@ -1,4 +1,4 @@
-**Frontend-project "Learn to learn" by Yandex Practicum.**
+**Frontend-project "Learn to learn" by Yandex Practicum.*
 
 — Currently used technologies —
 • HTML
