@@ -5,4 +5,4 @@ Frontend-project "Learn to learn" by Yandex Practicum.
 • CSS;
 
 — Plans for finalizing the project 
-• Finalize and modify the project for the second sprint;
+• Finalize and modify the project for the third sprint;
