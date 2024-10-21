@@ -3,4 +3,5 @@
   height: 32px;
   background-repeat: no-repeat;
   background-size: contain;
+  z-index: 2;
 }
