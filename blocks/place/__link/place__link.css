@@ -6,3 +6,7 @@
     text-underline-offset: 4px;
     color: #fff;
 }
+
+.place__link:hover {
+    opacity: .8;
+}
