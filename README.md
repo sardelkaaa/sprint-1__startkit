@@ -8,5 +8,7 @@
 * [Link to Figma layout](https://www.figma.com/file/5S2WSbEFL6awjVWJ0NWL8Q/Sprint-3_-Russia-_-desktop-mobile?node-id=28503%3A0)
 
 **Technologies used**
-    HTML5
-    CSS
+HTML5
+CSS
+
+Git Pages: https://sardelkaaa.github.io/Frontend-Project/
