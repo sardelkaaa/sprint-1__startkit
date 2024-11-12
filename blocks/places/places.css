@@ -1,22 +1,13 @@
+@import url(./__list/places__list.css);
+@import url(./__item/places__item.css);
+
 .places {
-    margin-top: 92px;
-    padding: 0 48px;
+  font-family: 'Inter', Arial, sans-serif;
+  padding: 15px 0 36px;
 }
 
-@media screen and (max-width: 1023px) {
-    .places {
-        padding: 0 24px;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .places {
-        padding: 0;
-    }
-}
-
-@media screen and (min-width: 1280px) {
-    .places {
-        padding: 0 148px;
-    }
+@media screen and (max-width: 568px) {
+  .places {
+    padding: 15px 0 18px;
+  }
 }
