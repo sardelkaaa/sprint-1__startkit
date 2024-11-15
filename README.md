@@ -1,6 +1,6 @@
 # Проектная работа Mesto (Project work Mesto)
 
-***Description*** 
+***Description***
 The project is made with JavaScript.
 
 ***Functionality***
