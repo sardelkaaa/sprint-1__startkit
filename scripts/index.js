@@ -32,7 +32,7 @@ function createCard(name, link, alt) {
 
     // добавление/удаление лайка
     const cardLike = card.querySelector('.card__like-button');
-    cardLike.addEventListener('click', (e) => e.target.classList.toggle('card__like-button_is-active'))
+    cardLike.addEventListener('click', (e) => e.target.classList.toggle('card__like-button_is-active'));
     
     // просмотр картинки
     const cardImage = card.querySelector('.card__image');
@@ -41,7 +41,7 @@ function createCard(name, link, alt) {
         imageInPopup.src = e.target.src;
         imageInPopup.alt = e.target.alt;
         imageInPopupCaption.textContent = name;
-    })
+    });
 
     // удаление карточки
     const cardDelete = card.querySelector('.card__delete-button');
@@ -70,8 +70,8 @@ function handleProfileFormSubmit(evt) {
 // функция добавления карточки
 function handleCardFormSubmit(evt) {
     evt.preventDefault();
-    placesList.prepend(createCard(placeNameInput.value, linkInput.value, placeNameInput.value))
-    buttonSaveCardPopup.addEventListener('click', closeModal(popupCardAdd))
+    placesList.prepend(createCard(placeNameInput.value, linkInput.value, placeNameInput.value));
+    buttonSaveCardPopup.addEventListener('click', closeModal(popupCardAdd));
 }
 
 function addDefaultProfileValues() {
@@ -86,18 +86,22 @@ initialCards.forEach(card => {
 
 // открытие/закрытие попапов
 buttonEditProfile.addEventListener('click', function() {
-    addDefaultProfile()
-    openModal(popupProfileEdit)
+    addDefaultProfileValues();
+    openModal(popupProfileEdit);
 });
+
 buttonCloseProfilePopup.addEventListener('click', function() {
     closeModal(popupProfileEdit);
-    addDefaultProfile()
-}) 
+    addDefaultProfile();
+})
+
 buttonSaveProfilePopup.addEventListener('click', () => closeModal(popupProfileEdit));
 
+
 buttonAddCard.addEventListener('click', () => openModal(popupCardAdd));
+
 buttonCloseCardPopup.addEventListener('click', function() {
-    closeModal(popupCardAdd)
+    closeModal(popupCardAdd);
     if (placeNameInput.value) placeNameInput.value = '';
     if (linkInput.value) linkInput.value = '';
 });
