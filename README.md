@@ -14,3 +14,6 @@ The project is made with JavaScript.
 1. HTML5
 2. CSS
 3. JavaScript
+4. Webpack
+5. Babel
+6. postcss
