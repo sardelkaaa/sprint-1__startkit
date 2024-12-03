@@ -9,6 +9,7 @@ The project is made with JavaScript.
 3. Editing profile
 4. Viewing card images
 5. "Likes"
+6. Validating forms
 
 ***Technologies***
 1. HTML5
