@@ -27,13 +27,15 @@ function createCard(name, link, alt, imagePopup, imageInPopup, imageInPopupCapti
                 .then((res) => {
                     e.target.classList.add('card__like-button_is-active')
                     card.querySelector('.card__like-count').textContent = res.likes.length;
-                });
+                })
+                .catch((err) => console.log(err));
         } else {
             removeLike(cardId)
                 .then((res) => {
                     e.target.classList.remove('card__like-button_is-active')
                     card.querySelector('.card__like-count').textContent = res.likes.length;
-                });
+                })
+                .catch((err) => console.log(err));
         }
     });
     
