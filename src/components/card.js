@@ -25,14 +25,14 @@ function createCard(name, link, alt, imagePopup, imageInPopup, imageInPopupCapti
         if (!e.target.classList.contains('card__like-button_is-active')) {
             addLike(cardId)
                 .then((res) => {
-                    e.target.classList.add('card__like-button_is-active')
+                    e.target.classList.add('card__like-button_is-active');
                     card.querySelector('.card__like-count').textContent = res.likes.length;
                 })
                 .catch((err) => console.log(err));
         } else {
             removeLike(cardId)
                 .then((res) => {
-                    e.target.classList.remove('card__like-button_is-active')
+                    e.target.classList.remove('card__like-button_is-active');
                     card.querySelector('.card__like-count').textContent = res.likes.length;
                 })
                 .catch((err) => console.log(err));
